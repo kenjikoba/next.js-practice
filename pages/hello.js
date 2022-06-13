@@ -1,7 +1,7 @@
 import Card from '../components/card'
 import styles from '../styles/Home.module.css'
-import Layout from '../components/layout'
 import { useEffect,useState } from 'react'
+import Head from 'next/head'
 
 export default function Home() {
   const [users, setUsers] = useState([])
@@ -15,8 +15,10 @@ export default function Home() {
   },[])
 
   return (
-    <Layout className={styles.container}>
       <main className={styles.main}>
+        <Head>
+        <title>Hello</title>
+      </Head>
  
       <ul>
         {users.map(user => (
@@ -27,7 +29,7 @@ export default function Home() {
         <div className={styles.grid}>
           
 
-          <Card title="documentation" href="https://nextjs.org/docs">
+          <Card title="documentation" Link href={"/"}>
             <p>Find in-depth information about Next.js features and API.</p>
           </Card>
   
@@ -44,6 +46,5 @@ export default function Home() {
 
         </div>
       </main>
-    </Layout>
   )
 }

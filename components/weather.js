@@ -12,5 +12,4 @@ export default function Weather({display_name, color_name, page}) {
           </p>
         </Button>
       </div>
-    )
-}
+    )}

@@ -26,7 +26,7 @@ export default function Header() {
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
     </Nav>
-        <a class="no-underline text-blue-500">個人的なサイトです</a>
+        <a className="no-underline text-blue-500">個人的なサイトです</a>
   </Navbar.Collapse>
   </Container>
 </Navbar>

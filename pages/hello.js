@@ -1,13 +1,31 @@
 import Card from '../components/card'
 import styles from '../styles/Home.module.css'
-import Layout from '../components/layout';
+import Layout from '../components/layout'
+import { useEffect,useState } from 'react'
 
 export default function Home() {
+  const [users, setUsers] = useState([])
+  useEffect(() => {
+    const fetchUsers = async () => {
+      const response = await fetch('/api/users')
+      const data = await response.json()
+      setUsers(data.users)
+    }
+    fetchUsers()
+  },[])
 
   return (
     <Layout className={styles.container}>
       <main className={styles.main}>
+ 
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+
         <div className={styles.grid}>
+          
 
           <Card title="documentation" href="https://nextjs.org/docs">
             <p>Find in-depth information about Next.js features and API.</p>

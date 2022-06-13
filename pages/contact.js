@@ -10,3 +10,11 @@ export default function contact() {
 }
 
 
+
+
+// "scripts": {
+//     "dev": "next dev",
+//     "build": "next build",
+//     "start": "next start",
+//     "lint": "next lint"
+//   },

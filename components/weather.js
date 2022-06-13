@@ -1,15 +1,11 @@
 import {Button} from 'react-bootstrap'
+import styles from '../styles/Home.module.css'
 
-export default function Weather({display_name, color_name, page}) {
+
+export default function Weather({display_name, page}) {
     return (
-      <div className="p-4">
-        <Button href={`/${page}`} className={`bg-gradient-to-r from-${color_name}-500 to-${color_name}-300
-                w-96 h-56 m-auto rounded-xl shadow-2xl 
-                transform hover:scale-110 transition-transform
-                text-white relative`}>    
-          <p className="text-4xl pt-20">
+      <Button href={`/${page}`} className={styles.push}> 
             {display_name}
-          </p>
-        </Button>
-      </div>
-    )}
+      </Button>
+    )
+    }

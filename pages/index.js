@@ -1,38 +1,33 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Weather from '../components/weather'
-
+import Image from 'next/image'
+import {Link as Scroll} from "react-scroll"
 
 export default function Home() {
   const cities = [
     {
       display_name: 'PROFILE',
-      color_name: 'blue',
       page: ''
     },
     {
       display_name: 'WORKS',
-      color_name: 'yellow',
       page: 'hello'
     },
     {
       display_name: 'CONTACT',
-      color_name: 'green',
       page: 'contact'
     }, 
     {
       display_name: 'SOCCER',
-      color_name: 'red',
       page: 'hello'
     },
     {
       display_name: 'QUALIFICATION',
-      color_name: 'purple',
       page: ''
     },
     {
       display_name: 'THIS WEBSITE',
-      color_name: 'pink',
       page: ''
     }
   ];
@@ -41,16 +36,26 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <div className="min-h-screen flex justify-center items-center flex-wrap">
+      <div className={styles.image}>
+        <Image src="/network.webp" width={1600} height={900}/>
+      <p>Hi, I'm Kenji</p>
+      <Scroll to="there" smooth={true} duration={100} offset={-10}>
+      <button>
+            <Image src="/arrow2.png" alt="Vercel Logo" width={200} height={100} />
+          </button>
+          </Scroll>
+      </div>
+      <div id="there" className={styles.background}>
+      <div className={styles.view}>
     { 
         cities.map((city,index) => 
         <Weather 
           key={index} 
           display_name={city.display_name} 
-          color_name={city.color_name} 
           page={city.page}
         />)
       }
+  </div>
   </div>
     </div>
   )

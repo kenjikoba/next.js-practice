@@ -17,14 +17,13 @@ export default function Header() {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
     <Nav.Link href="/">Home</Nav.Link>
-    <Nav.Link href="/hello">Hello</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+    <Nav.Link href="/profile">Profile</Nav.Link>
+      <NavDropdown title="More on" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="/works">Works</NavDropdown.Item>
+        <NavDropdown.Item href="/achievements">Achievements</NavDropdown.Item>
+        <NavDropdown.Item href="/soccer">Soccer</NavDropdown.Item>
       </NavDropdown>
+      <Nav.Link href="/contact">Contact</Nav.Link>
     </Nav>
         <a className="no-underline text-blue-800">個人的なサイトです</a>
   </Navbar.Collapse>

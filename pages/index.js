@@ -23,7 +23,7 @@ export default function Home() {
       page: 'hello'
     },
     {
-      display_name: 'QUALIFICATION',
+      display_name: 'ACHIEVEMENTS',
       page: ''
     },
     {

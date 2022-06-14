@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import { useEffect,useState } from 'react'
 import Head from 'next/head'
 
-export default function Home() {
+export default function Profile() {
   const [users, setUsers] = useState([])
   useEffect(() => {
     const fetchUsers = async () => {
@@ -17,7 +17,7 @@ export default function Home() {
   return (
       <main className={styles.main}>
         <Head>
-        <title>Hello</title>
+        <title>Profile</title>
       </Head>
  
       <ul>

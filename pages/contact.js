@@ -4,6 +4,25 @@ import { useEffect,useState } from 'react'
 import Head from 'next/head'
 
 export default function Contact() {
+
+  const registerUser = async event => {
+    event.preventDefault()
+ 
+    const res = await fetch('/api/send', {
+      body: JSON.stringify({
+        email: event.target.email.value,
+        message: event.target.message.value
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST'
+    })
+ 
+    const result = await res.json()
+
+  }
+
   const [users, setUsers] = useState([])
   useEffect(() => {
     const fetchUsers = async () => {
@@ -19,6 +38,22 @@ export default function Contact() {
         <Head>
         <title>Contact</title>
       </Head>
+
+      <div className="container mt-5">
+      <form onSubmit={registerUser}>
+        <div className="mb-3">
+          <label htmlFor="email">メールアドレス</label>
+          <input id="email" name="email" type="email" className="form-control" placeholder="name@example.com"/>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="message" className="form-label">問合せ内容</label>
+          <textarea id="message" name="message" className="form-control" rows="3"></textarea>
+        </div>
+        <div className="mb-3">
+          <button type="submit" className="btn btn-primary">送信</button>
+        </div>
+      </form>
+    </div>
  
       <ul>
         {users.map(user => (
@@ -28,21 +63,6 @@ export default function Contact() {
 
         <div className={styles.grid}>
           
-
-          <Card title="documentation" Link href={"/"}>
-            <p>This is contact page.</p>
-          </Card>
-  
-          <Card title="hello"/> 
-
-          <Card title="example" href="https://github.com/vercel/next.js/tree/canary/examples">
-            {/** childrenはこの中のこと */}
-            <img src="/vercel.svg"/>
-          </Card>
-
-          <Card title="Deploy" href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
-            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </Card>
 
         </div>
       </main>

@@ -8,11 +8,11 @@ export default function Home() {
   const cities = [
     {
       display_name: 'PROFILE',
-      page: ''
+      page: 'profile'
     },
     {
       display_name: 'WORKS',
-      page: 'hello'
+      page: 'works'
     },
     {
       display_name: 'CONTACT',
@@ -20,11 +20,11 @@ export default function Home() {
     }, 
     {
       display_name: 'SOCCER',
-      page: 'hello'
+      page: 'soccer'
     },
     {
       display_name: 'ACHIEVEMENTS',
-      page: ''
+      page: 'achievements'
     },
     {
       display_name: 'THIS WEBSITE',
@@ -37,8 +37,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <div className={styles.image}>
-        <Image src="/network.webp" width={1600} height={900}/>
-      <p>Hi, I'm Kenji</p>
+      <p>Kenji Kobayashi</p>
       <Scroll to="there" smooth={true} duration={100} offset={-10}>
       <button>
             <Image src="/arrow2.png" alt="Vercel Logo" width={200} height={100} />

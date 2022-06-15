@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  border: 0px;
+  margin: 0px;
 }
 
 .card {
@@ -14,6 +16,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 0px;
+  margin: 0px;
 }
 
 .description {
@@ -97,6 +101,7 @@
   margin-right: calc(50% - 50vw);
 	margin-left: calc(50% - 50vw);
   background: linear-gradient(120deg,rgb(21, 21, 164), rgb(210, 111, 128));
+  border: 0px;
 }
 
 .push {
@@ -124,6 +129,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  border: 0px solid transparent;
 }
 
 @media (max-width: 600px) {

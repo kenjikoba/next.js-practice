@@ -89,7 +89,7 @@
 
 .image p {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: rgba(172, 255, 47, 0.536);
@@ -113,7 +113,7 @@
 
 .image button:hover {
   transition: 1s;
-  transform: scale(1.2,1.2);
+  transform: scale(1.5,1.5);
   background: transparent;
   border: 2px solid transparent;
 }
@@ -123,6 +123,7 @@
 	margin-left: calc(50% - 50vw);
   background-color: rgba(0, 0, 0, 0.819);
   border: 0px;
+  height: 600px;
 }
 
 .push {

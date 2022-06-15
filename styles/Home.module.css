@@ -134,17 +134,17 @@
   font-size: 200%;
   font-weight: bold;
   font-family: cursive;
-  border: 0px solid transparent;
+  border: transparent;
 }
 
 .push:hover {
   transition: 1s;
   transform: scale(1.2,1.2);
   background: transparent;
-  border: 0px solid transparent;
+  border: transparent;
 }
 .push:active {
-  border: 0px solid transparent;
+  border: transparent;
 }
 
 .view {
@@ -154,7 +154,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 0px solid transparent;
+  border: transparent;
 }
 
 .my_works {

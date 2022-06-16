@@ -40,6 +40,10 @@ export default function Profile() {
         <title>Profile</title>
       </Head>
 
+      <div className={styles.big_container}>
+        <h1 className={styles.my_works}>My Profile</h1>
+        </div>
+
       <div style={{ height: '600px', width: '800px' }}>
         <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_OW_MAPS_API_KEY }}

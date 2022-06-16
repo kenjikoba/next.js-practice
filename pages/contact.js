@@ -1,4 +1,3 @@
-import Card from '../components/card'
 import styles from '../styles/Home.module.css'
 import { useEffect,useState } from 'react'
 import Head from 'next/head'
@@ -42,15 +41,15 @@ export default function Contact() {
       <div className="container mt-5">
       <form onSubmit={registerUser}>
         <div className="mb-3">
-          <label htmlFor="email">メールアドレス</label>
+          <label htmlFor="email" className={styles.contact_words}>メールアドレス</label>
           <input id="email" name="email" type="email" className="form-control" placeholder="name@example.com"/>
         </div>
         <div className="mb-3">
-          <label htmlFor="message" className="form-label">問合せ内容</label>
+          <label htmlFor="message"  className={styles.contact_words}>問合せ内容</label>
           <textarea id="message" name="message" className="form-control" rows="3"></textarea>
         </div>
         <div className="mb-3">
-          <button type="submit" className="btn btn-primary">送信</button>
+          <button type="submit" className={styles.send}>送信</button>
         </div>
       </form>
     </div>

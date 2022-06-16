@@ -49,6 +49,7 @@ export default function Profile() {
         onClick={setLatLng}
         />
       </div>
+      <div className={styles.boundball}>跳ねるボール</div>
  
       <ul>
         {users.map(user => (

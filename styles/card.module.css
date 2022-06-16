@@ -76,9 +76,7 @@
   .view_button {
     background-color: transparent;
     border-color: transparent;
-    /* animation: blinking 3s ease-in-out infinite alternate; */
     animation: anime1 1.5s ease 0s infinite alternate;
-    /* animation: anime2 0.5s ease 0s infinite; */
   }
 
   .button_itself:hover,

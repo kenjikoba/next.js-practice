@@ -1,1 +1,2 @@
-Open [http://practice-delta.vercel.app/](http://practice-delta.vercel.app/) with your browser to see the website.
+[http://practice-delta.vercel.app/](http://practice-delta.vercel.app/) がサイトです。
+これがポートフォリオサイトです。

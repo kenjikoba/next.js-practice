@@ -24,8 +24,8 @@ export default function Works() {
     {
       number: "3",
       title: '電話アプリ',
-      url_work: "https://github.com/kenjikoba/soft2-lifegame",
-      url_code: "https://github.com/kenjikoba/soft2-lifegame",
+      url_work: "https://github.com/kenjikoba/phone",
+      url_code: "https://github.com/kenjikoba/phone",
       introduction: "C言語のみで電話アプリを作りました",
       work_img: "/network.webp"
     },

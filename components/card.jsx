@@ -4,9 +4,9 @@ import Image from 'next/image'
 import {Button} from 'react-bootstrap'
 
 
-const Card = ({number, title, url, introduction, work_img})=>{
+const Card = ({number, title, url_work, url_code, introduction, work_img})=>{
     return (
-        <Button href={`/${url}`} className={styles.card}> 
+        <Button href={`/${url_work}`} className={styles.card}> 
             <div className={styles.title_section}>
             <h2>
                 {title}
@@ -22,12 +22,12 @@ const Card = ({number, title, url, introduction, work_img})=>{
             </div>
             <div className={styles.button_section}>
                 <div className={styles.button_itself}>
-                <Button href={`/${url}`} className={styles.view_button}>
+                <Button href={`${url_work}`} className={styles.view_button}>
                     <p className={styles.view_word}>View Work</p>
                 </Button>
                 </div>
                 <div className={styles.button_itself}>
-                <Button href={`/${url}`} className={styles.view_button}>
+                <Button href={`${url_code}`} className={styles.view_button}>
                     <p className={styles.view_word}>View Code</p>
                 </Button>
                 </div>

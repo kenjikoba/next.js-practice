@@ -55,11 +55,11 @@ export default function Profile() {
       </div>
       <div className={styles.boundball}>跳ねるボール</div>
  
-      <ul>
+      {/* <ul>
         {users.map(user => (
           <li key={user.id}>{user.name}</li>
         ))}
-      </ul>
+      </ul> */}
 
         <div className={styles.grid}>
        
